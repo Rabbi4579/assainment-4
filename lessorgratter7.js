@@ -8,5 +8,5 @@ function isLGSeven(number){
     }
 }
 
-const myNumber = isLGSeven(15);
+const myNumber = isLGSeven(6);
 console.log(myNumber)
