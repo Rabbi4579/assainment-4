@@ -5,7 +5,9 @@ The function received a parameter.In the function declare loop for iterate every
 */ 
 
 function findingBadData(data){
-
+    if(typeof data !== 'object'){
+        return 'Please give valid array'
+    }
     const result = [];
     for(let i = 0; i < data.length; i++){
         let element = data[i];
@@ -16,6 +18,6 @@ function findingBadData(data){
     return result.length;
 }
 
-const myData = [4, -9, 5, -33, 55];
+const myData = [ 9, 5, -33, 55];
 const findData = findingBadData(myData);
 console.log(findData)
