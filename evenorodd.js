@@ -1,10 +1,10 @@
 /*
-This fuction received a string value by parameter. In the function create a loop for iterate every element than set a condition if input.length Remainder  by 2 does not equal 0 so it's a odd otherwise it's a even than return the value. 
+This fuction received a string value by parameter. In the function declare a loop for iterate every element than set a condition if input.length Remainder  by 2 does not equal 0 so it's a odd otherwise it's a even than return the value. 
 
 */ 
 function evenOdd(str) {
     if(typeof str !== 'string'){
-        return 'It should be string.'
+        return 'Input should be a string.'
     }
     for (let i = 0; i < str.length; i++) {
         if (str.length % 2 !== 0) {
@@ -18,5 +18,5 @@ function evenOdd(str) {
 
 }
 
-const myString = evenOdd('Batch7');
+const myString = evenOdd(55);
 console.log(myString)

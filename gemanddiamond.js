@@ -6,13 +6,13 @@ gemsToDiamond function received there perameter and it's contain there friends g
 function gemsToDiamond(friend1, friend2, friend3) {
 
     if (typeof friend1 !== 'number') {
-        return 'Please give a number';
+        return 'friend 1 perameter should be a number.';
     }
     else if (typeof friend2 !== 'number') {
-        return 'please give a number';
+        return 'friend 2 perameter should be a number.';
     }
     else if (typeof friend3 !== 'number') {
-        return 'please give a number';
+        return 'friend 3 perameter  should be a number.';
     }
 
     const friend1GemsPower = friend1 * 21;
@@ -29,5 +29,5 @@ function gemsToDiamond(friend1, friend2, friend3) {
 
 }
 
-const gemNumber = gemsToDiamond(1, 1, 1)
+const gemNumber = gemsToDiamond(100, 5, 1)
 console.log(gemNumber)

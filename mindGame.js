@@ -8,7 +8,7 @@ function mindGame(number) {
         return 'It should be a number'
     }
 
-    const multiply = Math.abs(number) * 3;
+    const multiply = number * 3;
     const addition = multiply + 10;
     const Division = addition / 2;
     const substraction = Division - 5;
@@ -16,6 +16,6 @@ function mindGame(number) {
 
 }
 
-let myNumbers = mindGame(50);
+let myNumbers = mindGame(33);
 console.log(myNumbers)
 
